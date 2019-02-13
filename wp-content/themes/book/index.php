@@ -40,13 +40,7 @@ get_template_part('part-title');
 
                         /* Post Metadata */
                         ?>
-                        <h4 style="margin-top: 10px;width:130px;
-    line-height: 30px;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;">
+                        <h4 class="title-h4">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
                                 <?php the_title(); ?>
                             </a>

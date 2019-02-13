@@ -652,7 +652,7 @@ h3.entry-title {
     background: rgba(255, 255, 255, .05);
     box-sizing: border-box;
     padding-right: 5px;
-    margin: 0 1px 1px 0;
+    margin: 0 10px 1px 0;
     line-height: 25px
 }
 
@@ -1010,6 +1010,17 @@ p.comment-form-author, p.comment-form-email, p.comment-form-url {
 
 .search-form {
     margin: 15px 0
+}
+
+.title-h4 {
+    margin-top: 10px;
+    width: 130px;
+    line-height: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
 }
 
 .search-form label:after {
@@ -1584,6 +1595,16 @@ p a, p a:visited {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .post img {
+        width: 107px;
+        height: 150px;
+    }
+
+    .title-h4 {
+        width: 107px;
+    }
+
     .tophead .search-form {
         width: 60%;
         right: -40%;

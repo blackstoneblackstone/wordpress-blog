@@ -100,31 +100,14 @@ get_template_part( 'part-title' );
 
 						?>
 					</div>
-					<?php
 
-					/* Post thumbnail (Featured Image) */
-					if ( '' !== get_the_post_thumbnail() ) : // As recommended from the WP codex, has_post_thumbnail() is not reliable
-						?>
-						<div class="thumbnail">
-							<?php
-							the_post_thumbnail(
-								'full',
-								array(
-									'class' => 'scale-with-grid',
-								)
-							);
-							?>
-						</div>
-						<?php
-					endif;
-
-					?>
 					<div class="post-contents entry-content">
 						<?php
 
 						the_content();
 
 						?>
+
 						<div class="clear"></div>
 						<?php
 
@@ -176,6 +159,25 @@ get_template_part( 'part-title' );
 	</div>
 
 	<div id="sidebar-container">
+        <?php
+
+        /* Post thumbnail (Featured Image) */
+        if ( '' !== get_the_post_thumbnail() ) : // As recommended from the WP codex, has_post_thumbnail() is not reliable
+            ?>
+            <div class="thumbnail">
+                <?php
+                the_post_thumbnail(
+                    'full',
+                    array(
+                        'class' => 'scale-with-grid',
+                    )
+                );
+                ?>
+            </div>
+        <?php
+        endif;
+
+        ?>
 		<?php get_sidebar(); ?>
 	</div>
 
