@@ -1560,6 +1560,15 @@ p a, p a:visited {
 }
 
 @media only screen and (max-width: 767px) {
+
+    html {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .tophead .search-form {
         width: 60%;
         right: -40%;
@@ -1600,7 +1609,6 @@ p a, p a:visited {
     }
 
     #footer .container > ul > li, #page-container > * {
-        margin-left: 10px !important;
         margin-bottom: 20px
     }
 

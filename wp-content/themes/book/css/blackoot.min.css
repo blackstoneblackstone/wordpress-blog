@@ -1596,6 +1596,14 @@ p a, p a:visited {
 
 @media only screen and (max-width: 767px) {
 
+    html{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .post img {
         width: 107px;
         height: 150px;
